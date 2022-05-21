@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pacchetti - Sined Travels</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+
+    <body>
+        <menu>
+            {% for title, url in menu_entries %}
+              <li><a class="{% if url == request.path %}active{% endif %}" href="{{url}}"><span>{{title}}</span></a></li>
+            {% endfor %}
+            <li><a href="/logout"><span>Benvenuto, <b>{{username}}</b><br>Logout</span></a></li>
+        </menu>
+
+        <div class="container">
+            <h1>
+                Risparmia con noi!
+            </h1>
+            <table>
+                <thead>
+                    <th>Partenza</th>
+                    <th>Arrivo</th>
+                    <th>Durata</th>
+                    <th>Hotel</th>
+                    <th>Prezzo**</th>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Milano</td>
+                        <td>Roma</td>
+                        <td>3 giorni</td>
+                        <td>3*</td>
+                        <td>100€</td>
+                    </tr>
+                    <tr>
+                        <td>Milano</td>
+                        <td>Barcellona</td>
+                        <td>7 giorni</td>
+                        <td>4*S</td>
+                        <td>400€</td>
+                    </tr>
+                    <tr>
+                        <td>Torino</td>
+                        <td>Berlino</td>
+                        <td>5 giorni</td>
+                        <td>3*</td>
+                        <td>170€</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Bologna</td>
+                        <td>Tirana</td>
+                        <td>10 giorni</td>
+                        <td>4*</td>
+                        <td>230€</td>
+                    </tr>
+                    <tr>
+                        <td>Napoli</td>
+                        <td>Madrid</td>
+                        <td>4 giorni</td>
+                        <td>5*</td>
+                        <td>545€</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Rimini</td>
+                        <td>Budapest</td>
+                        <td>7 giorni</td>
+                        <td>3*S</td>
+                        <td>360€</td>
+                    </tr>
+                    <tr>
+                        <td>Ancona</td>
+                        <td>Oslo</td>
+                        <td>14 giorni</td>
+                        <td>3*</td>
+                        <td>710€</td>
+                    </tr>
+                    <tr>
+                        <td>Bari</td>
+                        <td>Reykjavik</td>
+                        <td>6 giorni</td>
+                        <td>2*</td>
+                        <td>460€</td>
+                    </tr>
+                    <tr>
+                        <td>Firenze</td>
+                        <td>Lisbona</td>
+                        <td>5 giorni</td>
+                        <td>3*</td>
+                        <td>190€</td>
+                    </tr>
+                    <tr>
+                        <td>Livorno</td>
+                        <td>Atene</td>
+                        <td>8 giorni</td>
+                        <td>4*</td>
+                        <td>250€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <br>
+        <div id="notes">
+            **I prezzi includono viaggio di andata, ritorno, soggiorno, colazione e <a href="insurance">assicurazioni</a>.
+        </div>
+    </body>
+
+    <footer>
+        <p>
+            Author: Denis Caushaj
+            <br>
+            <a href="mailto:denis.caushaj@studio.unibo.it">denis.caushaj@studio.unibo.it</a>
+        </p>
+        Copyright © 2022-2022 <a href="/">sinedtravels.com</a>. Tutti i diritti riservati.
+    </footer>
+</html>

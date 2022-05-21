@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Soggiorni - Sined Travels</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <menu>
+            {% for title, url in menu_entries %}
+            <li><a class="{% if url == request.path %}active{% endif %}" href="{{url}}"><span>{{title}}</span></a></li>
+            {% endfor %}
+            <li><a href="/logout"><span>Benvenuto, <b>{{username}}</b><br>Logout</span></a></li>
+        </menu>
+        
+        <div class="container">
+            <h1>
+                Gli hotel che consigliamo!
+            </h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Città</th>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Roma</td>
+                        <td><a href="https://www.relaismazzini.it/" target="_blank">Relais Mazzini</a></td>
+                    </tr>
+                    <tr>
+                        <td>Roma</td>
+                        <td><a href="https://www.hotelirico.com/it/" target="_blank">Hotel Lirico</a></td>
+                    </tr>
+                    <tr>
+                        <td>Barcellona</td>
+                        <td><a href="https://www.hotelastoria-barcelona.com/it" target="_blank">Hotel Astoria</a></td>
+                    </tr>
+                    <tr>
+                        <td>Barcellona</td>
+                        <td><a href="https://www.gaudintbcnsuites.com/es" target="_blank">Gaudint Barcelona Suites</a></td>
+                    </tr>
+                    <tr>
+                        <td>Berlino</td>
+                        <td><a href="https://www.hotel-berlin.de/en" target="_blank">Hotel Berlin</a></td>
+                    </tr>
+                    <tr>
+                        <td>Berlino</td>
+                        <td><a href="https://www.hotel-hansablick.de/" target="_blank">Hotel Hansablick</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tirana</td>
+                        <td><a href="https://hotelgreentirana.com/" target="_blank">Hotel Green Tirana</a></td>
+                    </tr>
+                    <tr>
+                        <td>Madrid</td>
+                        <td><a href="https://www.pestanacollection.com/it/hotel/pestana-madrid-plaza-mayor" target="_blank">Pestana Plaza Mayor Madrid</a></td>
+                    </tr>
+                    <tr>
+                        <td>Madrid</td>
+                        <td><a href="https://www.hotelgranversalles.es/IT/hotel.html" target="_blank">Gran Versalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Budapest</td>
+                        <td><a href="https://grandjules.com/" target="_blank">Grand Jules</a></td>
+                    </tr>
+                    <tr>
+                        <td>Budapest</td>
+                        <td><a href="https://www.gerloczy.com/" target="_blank">Gerlóczy Boutique Hotel</a></td>
+                    </tr>
+                    <tr>
+                        <td>Oslo</td>
+                        <td><a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-conference-oslo-alna" target="_blank">Radisson Blu Hotel</a></td>
+                    </tr>
+                    <tr>
+                        <td>Oslo</td>
+                        <td><a href="https://citybox.no/en/oslo/" target="_blank">Citybox Hotel</a></td>
+                    </tr>
+                    <tr>
+                        <td>Reykjavik</td>
+                        <td><a href="https://www.centerhotels.com/en/hotel-grandi-reykjavik-rooms " target="_blank">Grandi by Center Hotels</a></td>
+                    </tr>
+                    <tr>
+                        <td>Reykjavik</td>
+                        <td><a href="http://igdlo-guesthouse.reykjavik-hotels-is.com/it/" target="_blank">Idglo Guesthouse</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lisbona</td>
+                        <td><a href="https://turim-hotels.com/en/turim-europa-hotel-en/" target="_blank">Turim Europa Hotel</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lisbona</td>
+                        <td><a href="https://www.hfhotels.com/it/hotels-it/hf-fenix-music-it/" target="_blank">HF Fenix Music</a></td>
+                    </tr>
+                    <tr>
+                        <td>Atene</td>
+                        <td><a href="https://athenscypria.com/it/" target="_blank">Athens Cypria Hotel</a></td>
+                    </tr>
+                    <tr>
+                        <td>Atene</td>
+                        <td><a href="https://pameparadiso.com/" target="_blank">Pame Paradiso</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>   
+
+    <footer>
+        <p>
+            Author: Denis Caushaj
+            <br>
+            <a href="mailto:denis.caushaj@studio.unibo.it">denis.caushaj@studio.unibo.it</a>
+        </p>
+        Copyright © 2022-2022 <a href="/">sinedtravels.com</a>. Tutti i diritti riservati.
+    </footer>
+</html>

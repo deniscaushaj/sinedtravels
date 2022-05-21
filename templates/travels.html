@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Viaggi - Sined Travels</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+
+    <body>
+        
+        <menu>
+            {% for title, url in menu_entries %}
+              <li><a class="{% if url == request.path %}active{% endif %}" href="{{url}}"><span>{{title}}</span></a></li>
+            {% endfor %}
+            <li><a href="/logout"><span>Benvenuto, <b>{{username}}</b><br>Logout</span></a></li>
+        </menu>
+        <div class="travels" class="container">
+            <h1>
+                Viaggia con noi!
+            </h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Partenza</th>
+                        <th>Arrivo</th>
+                        <th>A partire da</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Milano</td>
+                        <td>Roma</td>
+                        <td>20€</td>
+                    </tr>
+                    <tr>
+                        <td>Milano</td>
+                        <td>Barcellona</td>
+                        <td>70€</td>
+                    </tr>
+                    <tr>
+                        <td>Torino</td>
+                        <td>Berlino</td>
+                        <td>60€</td>
+                    </tr>
+                    <tr>
+                        <td>Bologna</td>
+                        <td>Tirana</td>
+                        <td>35€</td>
+                    </tr>
+                    <tr>
+                        <td>Napoli</td>
+                        <td>Madrid</td>
+                        <td>106€</td>
+                    </tr>
+                    <tr>
+                        <td>Rimini</td>
+                        <td>Budapest</td>
+                        <td>45€</td>
+                    </tr>
+                    <tr>
+                        <td>Ancona</td>
+                        <td>Oslo</td>
+                        <td>120€</td>
+                    </tr>
+                    <tr>
+                        <td>Bari</td>
+                        <td>Reykjavik</td>
+                        <td>207€</td>
+                    </tr>
+                    <tr>
+                        <td>Firenze</td>
+                        <td>Lisbona</td>
+                        <td>65€</td>
+                    </tr>
+                    <tr>
+                        <td>Livorno</td>
+                        <td>Atene</td>
+                        <td>82€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="bundles">
+            Risparmia sulla tua vacanza con <a href="bundles">i nostri pacchetti viaggio</a>
+        </div>
+    </body>
+
+    <footer>
+        <p>
+            Author: Denis Caushaj
+            <br>
+            <a href="mailto:denis.caushaj@studio.unibo.it">denis.caushaj@studio.unibo.it</a>
+        </p>
+        Copyright © 2022-2022 <a href="/">sinedtravels.com</a>. Tutti i diritti riservati.
+    </footer>
+</html>

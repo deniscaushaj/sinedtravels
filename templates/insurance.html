@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assicurazioni - Sined Travels</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+        
+    <body>
+        <menu>
+            {% for title, url in menu_entries %}
+              <li><a class="{% if url == request.path %}active{% endif %}" href="{{url}}"><span>{{title}}</span></a></li>
+            {% endfor %}
+            <li><a href="/logout"><span>Benvenuto, <b>{{username}}</b><br>Logout</span></a></li>
+        </menu>
+        <div class="insurance">
+            Paura dei voli cancellati? Nessun problema con la nostra assicurazione.
+            <b>Con solo il 10% in più sul totale del tuo volo* hai il rimborso totale in caso di cancellazione del tuo volo!</b>
+            <br>
+            <br>
+            <div>
+                *Sono inclusi i pacchetti. Esclusi le prenotazioni negli hotel
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <p>
+            Author: Denis Caushaj
+            <br>
+            <a href="mailto:denis.caushaj@studio.unibo.it">denis.caushaj@studio.unibo.it</a>
+        </p>
+        Copyright © 2022-2022 <a href="/">sinedtravels.com</a>. Tutti i diritti riservati.
+    </footer>
+</html>
