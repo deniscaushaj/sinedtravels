@@ -3,28 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>Registrati - Sined Travels</title>
+        <link rel="stylesheet" href="/static/signin-login_styles.css">
     </head>
 
     <body>
         <div class="signin">
             <form method="post">
                 <label for="username">Username</label>
-                <input name="username" id="username" required>
+                <input name="username" id="username" required autofocus>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required>
                 <input type="submit" value="Registrati">
+                <br>
             </form>
-            <div>Torna a <a href="login">Login</a></div>
+            <div class="esse">Torna a <a href="login">Login</a></div>
             <div class="error">{{error}}</div>
         </div>
     </body>
 
-    <footer>
-        <p>
-            Author: Denis Caushaj
-            <br>
-            <a href="mailto:denis.caushaj@studio.unibo.it">denis.caushaj@studio.unibo.it</a>
-        </p>
-        Copyright © 2022-2022 <a href="/">sinedtravels.com</a>. Tutti i diritti riservati.
-    </footer>
 </html>
