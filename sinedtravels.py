@@ -121,6 +121,6 @@ def logout():
 
 @app.route("/static/RelazioneReti.pdf", methods=["GET"])
 def download():
-    return send_file("/static/RelazioneReti.pdf", as_attachment=True)
+    return send_file("static/RelazioneReti.pdf", as_attachment=True)
 
 app.run()
