@@ -1,5 +1,4 @@
 from flask import Flask, make_response, redirect, render_template, request, send_file
-from crypt import methods
 import os
 from hashlib import sha256
 from base64 import b64encode, b64decode
