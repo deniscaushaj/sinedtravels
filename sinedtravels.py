@@ -119,8 +119,8 @@ def logout():
     resp.set_cookie(USER_COOKIE, "", expires=0)
     return resp
 
-@app.route("/static/sample.pdf", methods=["GET"])
+@app.route("/static/RelazioneReti.pdf", methods=["GET"])
 def download():
-    return send_file("static/sample.pdf", as_attachment=True)
+    return send_file("/static/RelazioneReti.pdf", as_attachment=True)
 
 app.run()
