@@ -15,7 +15,7 @@ MENU = [
     ("Assicurazioni", "/insurance"),
     ("Hotel e alloggi", "/stay"),
 ]
-USERS_PATH = "users"
+USERS_PATH = os.path.join(os.path.dirname(__file__), "users")
 USER_COOKIE = "user"
 
 def hash(s: str) -> str:
